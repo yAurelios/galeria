@@ -1,0 +1,156 @@
+:root{
+    --galeryoffset: 110%
+}
+*{
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galery{
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+.photos:hover{
+    transition: 1s;
+    animation-play-state: paused;
+    filter: grayscale(0);
+}
+.photos{
+    transition: 1s;
+    filter: grayscale(1.5);
+    margin-left: -10%;
+    /* outline: 5px solid rebeccapurple; */
+    height: 100%;
+    width: var(--galeryoffset);
+    background-image: url("https://abre.ai/gKbJ");
+    background-size: contain;
+    animation: slide infinite alternate 2s;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px 15px;
+}
+.photos div{
+    transition: 1s;
+    filter: grayscale(0.6);
+    background-size:cover;
+    background-position: center;
+}
+
+.photos div:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: 2s;
+}
+@keyframes slide{
+    from{margin-left: (var(--galeryoffset));}
+    to{margin-right: (-1*var(--galeryoffset));}
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(/src/imgs/gato13.png);
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(/src/imgs/gato14.png);
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(/src/imgs/gato15.png);
+}
+
+.div4 {
+    grid-area: 1 / 4 / 3 / 5;
+    background-image: url(/src/imgs/gato1.png);
+}
+
+.div5 {
+    grid-area: 1 / 5 / 2 / 6;
+    background-image: url(/src/imgs/gato20.png);
+}
+
+.div6 {
+    grid-area: 1 / 8 / 3 / 9;
+    background-image: url(/src/imgs/gato2.png);
+}
+
+.div7 {
+    grid-area: 1 / 6 / 2 / 8;
+    background-image: url(/src/imgs/gato11.png);
+}
+
+.div8 {
+    grid-area: 2 / 7 / 3 / 8;
+    background-image: url(/src/imgs/gato3.png);
+}
+
+.div9 {
+    grid-area: 3 / 4 / 4 / 5;
+    background-image: url(/src/imgs/gato16.png);
+}
+
+.div10 {
+    grid-area: 2 / 5 / 4 / 7;
+    background-image: url(/src/imgs/gato8.png);
+}
+
+.div11 {
+    grid-area: 2 / 3 / 4 / 4;
+    background-image: url(/src/imgs/gato4.png);
+}
+
+.div12 {
+    grid-area: 2 / 1 / 3 / 3;
+    background-image: url(/src/imgs/gato9.png);
+}
+
+.div13 {
+    grid-area: 5 / 1 / 6 / 2;
+    background-image: url(/src/imgs/gato18.png);
+}
+
+.div14 {
+    grid-area: 5 / 2 / 6 / 3;
+    background-image: url(/src/imgs/gato19.png);
+}
+
+.div15 {
+    grid-area: 4 / 5 / 6 / 6;
+    background-image: url(/src/imgs/gato5.png);
+}
+
+.div16 {
+    grid-area: 4 / 6 / 5 / 7;
+    background-image: url(/src/imgs/gato17.png);
+}
+
+.div17 {
+    grid-area: 5 / 6 / 6 / 7;
+    background-image: url(/src/imgs/gato6.png);
+}
+
+.div18 {
+    grid-area: 3 / 7 / 6 / 9;
+    background-image: url(/src/imgs/gato7.png);
+}
+
+.div19 {
+    grid-area: 3 / 1 / 5 / 3;
+    background-image: url(/src/imgs/gato10.png);
+}
+
+.div20 {
+    grid-area: 4 / 3 / 6 / 5;
+    background-image: url(/src/imgs/gato12.png);
+}

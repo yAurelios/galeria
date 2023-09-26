@@ -1,0 +1,27 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Conteúdos{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    width: 100%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+li{
+    width: 100%;
+}
